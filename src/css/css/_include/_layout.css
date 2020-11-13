@@ -1,0 +1,55 @@
+html {
+  font-size: 10px;
+}
+
+/* 共同設定 */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 共同設定 */
+
+a {
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.3s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  @media (--tb) {
+    padding: 0 3.9rem;
+  }
+  @media (--sp) {
+    padding: 0 1.5rem;
+  }
+}

@@ -1,0 +1,27 @@
+/* ==========================================================================
+ Variables
+========================================================================== */
+/*
+Table of Contents:
+1. Costom Media Query
+2.
+*/
+
+/* Costom Media Query
+	========================================================================== */
+@custom-media --sp only screen and (min-width: 0px) and (max-width: 767px);
+@custom-media --sptb only screen and (min-width: 0px) and (max-width: 1024px);
+@custom-media --tb only screen and (min-width: 768px) and (max-width: 1024px);
+@custom-media --tbpc only screen and (min-width: 768px);
+@custom-media --pc only screen and (min-width: 1025px);
+@custom-media --large only screen and (min-width: 768px) and (max-width: 1199px);
+@custom-media --xlarge only screen and (min-width: 1200px);
+@custom-media --tblarge only screen and (min-width: 0px) and (max-width: 1000px);
+
+@custom-media --spmax only screen and (min-width: 0px) and (max-width: 768px);
+@custom-media --pcmin only screen and (min-width: 769px) and (max-width: 1024px);
+@custom-media --pcmax only screen and (min-width: 769px);
+
+:root {
+
+}

@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "stylelint-prettier/recommended",
+    "stylelint-config-prettier",
+    "stylelint-config-rational-order"
+  ],
+  "rules": {
+    "indentation": 2,
+    "string-quotes": "double"
+  }
+}
