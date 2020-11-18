@@ -1,0 +1,13 @@
+.nav--active {
+  color: #2a8356;
+  border-left: 4px solid #2a8356;
+  & a {
+    color: #2a8356;
+  }
+}
+.pagination--active {
+  & .page-link {
+    color: #fff;
+    background-color: #2a8356;
+  }
+}

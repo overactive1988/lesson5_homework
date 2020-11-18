@@ -1,0 +1,170 @@
+extends /_include/_layout-base2.pug
+
+block var
+  -
+    var page = {
+      url : 'https://overactive1988.github.io/HexSchool_webslicinglesson2020/week05/assignment.html',
+      title : '第五週 - 後台表單設計 Assignment | leolee',
+      description : 'Assignment',
+      keywords : '',
+      htmlClass: '',
+    };
+
+block append css
+block content
+  main.main
+    .main__container
+      .main__header
+        .main__title
+          h1 Assignment
+          button.btn.mr-auto.main__option(type="button" data-toggle="modal" data-atget="#newAdmin")
+            span All Courses
+            i.material-icons keyboard_arrow_down
+        ul.main__others.list-unstyled
+          li
+            a(href="#")
+              i.material-icons search
+          li
+            a(href="#")
+              i.material-icons notifications_active
+
+      .main__body
+        .table-responsive
+          table.table
+            thead
+              tr.table_head
+                th(scope="col") ID
+                  a(href="#")
+                    i.material-icons arrow_downward
+                th(scope="col") Name
+                th(scope="col") Email
+                th(scope="col") Verified
+                th(scope="col")
+                th(scope="col")
+            tbody
+              tr.table_inner
+                th(scope="row") #1
+                td Emir Wicks
+                td.table_mail emir.wicks@mail.com
+                td Yes
+                td
+                  a(href="#")
+                    i.material-icons visibility
+                td
+                  a(href="#")
+                    i.material-icons create
+              tr.table_inner
+                th(scope="row") #2
+                td Zaina Goldsmith
+                td.table_mail zaina.goldsmith@mail.com
+                td Yes
+                td
+                  a(href="#")
+                    i.material-icons visibility
+                td
+                  a(href="#")
+                    i.material-icons create
+              tr.table_inner
+                th(scope="row") #3
+                td Mahima Lopez
+                td.table_mail Mahima.Lopez@mail.com
+                td Yes
+                td
+                  a(href="#")
+                    i.material-icons visibility
+                td
+                  a(href="#")
+                    i.material-icons create
+              tr.table_inner
+                th(scope="row") #4
+                td Pharrell Murray
+                td.table_mail Pharrell.Murray@mail.com
+                td Yes
+                td
+                  a(href="#")
+                    i.material-icons visibility
+                td
+                  a(href="#")
+                    i.material-icons create
+              tr.table_inner
+                th(scope="row") #5
+                td Annika Mcbride
+                td.table_mail Annika.Mcbride@mail.com
+                td Yes
+                td
+                  a(href="#")
+                    i.material-icons visibility
+                td
+                  a(href="#")
+                    i.material-icons create
+              tr.table_inner
+                th(scope="row") #6
+                td Fatimah Clark
+                td.table_mail Fatimah.Clark@mail.com
+                td Yes
+                td
+                  a(href="#")
+                    i.material-icons visibility
+                td
+                  a(href="#")
+                    i.material-icons create
+              tr.table_inner
+                th(scope="row") #7
+                td Klaudia Rhodes
+                td.table_mail Klaudia.Rhodes@mail.com
+                td Yes
+                td
+                  a(href="#")
+                    i.material-icons visibility
+                td
+                  a(href="#")
+                    i.material-icons create
+              tr.table_inner
+                th(scope="row") #8
+                td Tillie Lucero
+                td.table_mail Tillie.Lucero@mail.com
+                td Yes
+                td
+                  a(href="#")
+                    i.material-icons visibility
+                td
+                  a(href="#")
+                    i.material-icons create
+              tr.table_inner
+                th(scope="row") #9
+                td Sabrina Stephenson
+                td.table_mail Sabrina.Stephenson@mail.com
+                td Yes
+                td
+                  a(href="#")
+                    i.material-icons visibility
+                td
+                  a(href="#")
+                    i.material-icons create
+              tr.table_inner
+                th(scope="row") #10
+                td Annie Smith
+                td.table_mail Annie.Smith@mail.com
+                td Yes
+                td
+                  a(href="#")
+                    i.material-icons visibility
+                td
+                  a(href="#")
+                    i.material-icons create
+
+      .main__footer
+        nav(aria-label="Page navigation example")
+          ul.pagination.justify-content-end
+            li.page-item
+              a.page-link.d-flex.justify-content-center(href="#")
+                i.material-icons keyboard_arrow_left
+            li.page-item.pagination--active
+              a.page-link.d-flex.justify-content-center(href="#") 1
+            li.page-item
+              a.page-link.d-flex.justify-content-center(href="#") 2
+            li.page-item
+              a.page-link.d-flex.justify-content-center(href="#") 3
+            li.page-item
+              a.page-link.d-flex.justify-content-center(href="#")
+                i.material-icons keyboard_arrow_right

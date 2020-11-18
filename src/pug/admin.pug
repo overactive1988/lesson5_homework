@@ -1,0 +1,369 @@
+extends /_include/_layout-base.pug
+
+block var
+  -
+    var page = {
+      url : 'https://overactive1988.github.io/HexSchool_webslicinglesson2020/week05/admin.html',
+      title : '第五週 - 後台表單設計 Admin | leolee',
+      description : 'Admin',
+      keywords : '',
+      htmlClass: '',
+    };
+
+block append css
+block content
+  main.main
+    .main__container
+      .main__header
+        .main__title
+          h1 Admin
+          button.btn.mr-auto.main__option(type="button" data-toggle="modal" data-target="#newAdmin")
+            i.material-icons add
+            span Add New Admin
+        ul.main__others.list-unstyled
+          li
+            a(href="#")
+              i.material-icons search
+          li
+            a(href="#")
+              i.material-icons notifications_active
+
+        .
+          <!-- Modal -->
+          <!--new admin-->
+          <div class="modal fade" id="newAdmin" tabindex="-1" role="dialog" aria-labelledby="newAdminLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="newAdminLabel">New Admin</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal--admin">
+                  <form>
+                    <div class="admin--group pt-0">
+                      <h2>Account</h2>
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input class="form-control" type="name" class="name" id="name">
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" class="email" id="email">
+                      </div>
+                    </div>
+                    <div class="admin--group">
+                      <h2>Verification</h2>
+                      <div class="form--notice">
+                        <div class="verify--status">
+                          <span class="material-icons clr--warning">warning</span>
+                          <p class="font-weight-bold">Unverified</p>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-outline-success">Send Verification Mail</button>
+                      </div>
+                    </div>
+                    <div class="admin--group">
+                      <div class="form-group">
+                        <h2>Access Level</h2>
+                        <select class="form-control">
+                          <option value="" disabled selected>-Choose access level-</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="admin--group">
+                      <div class="form-group">
+                        <h2>Custom Access</h2>
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Lecture</label>
+                          <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                          <label class="form-check-label" for="exampleCheck2">Coupon</label>
+                          <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                          <label class="form-check-label" for="exampleCheck3">Message</label>
+                          <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                          <label class="form-check-label" for="exampleCheck4">Setting</label>
+                          <input type="checkbox" class="form-check-input" id="exampleCheck5">
+                          <label class="form-check-label" for="exampleCheck5">Task Menu</label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-success " data-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-success">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--edit admin-->
+          <div class="modal fade" id="editAdmin" tabindex="-1" role="dialog" aria-labelledby="editAdminLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="editAdminLabel">Edit Admin</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal--admin">
+                  <form>
+                    <div class="admin--group pt-0">
+                      <h2>Account</h2>
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input class="form-control value--bg" type="name" class="name" id="name" value="Emir Wicks">
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control value--bg" type="email" class="email" id="email" value="emir.wicks@mail.com">
+                      </div>
+                    </div>
+                    <div class="admin--group">
+                      <h2>Verification</h2>
+                      <div class="form--notice">
+                        <div class="verify--status">
+                          <span class="material-icons clr--success">check_circle</span>
+                          <p class="font-weight-bold">Verified</p>
+                        </div>
+                        <div class="verify--date">2020/4/12</div>
+                      </div>
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-outline-success" disabled>Send Verification Mail</button>
+                      </div>
+                    </div>
+                    <div class="admin--group">
+                      <div class="form-group">
+                        <h2>Access Level</h2>
+                        <select class="form-control">
+                          <option value="" selected>Admin</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="admin--group">
+                      <div class="form-group">
+                        <h2>Custom Access</h2>
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Lecture</label>
+                          <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                          <label class="form-check-label" for="exampleCheck2">Coupon</label>
+                          <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                          <label class="form-check-label" for="exampleCheck3">Message</label>
+                          <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                          <label class="form-check-label" for="exampleCheck4">Setting</label>
+                          <input type="checkbox" class="form-check-input" id="exampleCheck5">
+                          <label class="form-check-label" for="exampleCheck5">Task Menu</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="admin--group">
+                      <h2>Deactivate Account</h2>
+                      <div class="form--notice">
+                        <div class="verify--status">
+                          <span class="material-icons clr--warning">warning</span>
+                          <p class="clr--warning">This cannot be undone!</p>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-outline-warning font-weight-bold">Deactivate This Account</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-success " data-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-success">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--view-->
+          <div class="modal fade" id="view" tabindex="-1" role="dialog" aria-labelledby="viewTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="media">
+                    <img src="/assets/images/emir.jpg" class="align-self-start mr-3" alt="...">
+                    <div class="media-body">
+                      <p class="mt-0">#1</p>
+                      <p>Admin</p>
+                      <h2 class="modal-title">Emir Wicks</h2>
+                      <span>emir.wicks@mail.com</span>
+                      <div class="view-btn">
+                        <span class="text-capitalize">verified</span>
+                        <a href="#">
+                          <i class="arrow-btn clr--success"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-footer" style="display: none">
+                  <button type="button" class="btn btn-outline-warning font-weight-bold">Deactivate</button>
+                  <button type="button" class="btn btn-success font-weight-bold text-capitalize">edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      .main__body
+        .table-responsive
+          table.table
+            thead
+              tr.table_head
+                th(scope="col") ID
+                  a(href="#")
+                    i.material-icons arrow_downward
+                th(scope="col") Name
+                th(scope="col") Email
+                th(scope="col") Verified
+                th(scope="col")
+                th(scope="col")
+            tbody
+              tr.table_inner
+                th(scope="row") #1
+                td Emir Wicks
+                td.table_mail emir.wicks@mail.com
+                td Yes
+                td
+                  a(href="#" data-toggle="modal" data-target="#view")
+                    i.material-icons visibility
+                td
+                  a(href="#" data-toggle="modal" data-target="#editAdmin")
+                    i.material-icons create
+              tr.table_inner
+                th(scope="row") #2
+                td Zaina Goldsmith
+                td.table_mail zaina.goldsmith@mail.com
+                td Yes
+                td
+                  a(href="#" data-toggle="modal" data-target="#view")
+                    i.material-icons visibility
+                td
+                  a(href="#" data-toggle="modal" data-target="#editAdmin")
+                    i.material-icons create
+              tr.table_inner
+                th(scope="row") #3
+                td Mahima Lopez
+                td.table_mail Mahima.Lopez@mail.com
+                td Yes
+                td
+                  a(href="#" data-toggle="modal" data-target="#view")
+                    i.material-icons visibility
+                td
+                  a(href="#" data-toggle="modal" data-target="#editAdmin")
+                    i.material-icons create
+              tr.table_inner
+                th(scope="row") #4
+                td Pharrell Murray
+                td.table_mail Pharrell.Murray@mail.com
+                td Yes
+                td
+                  a(href="#" data-toggle="modal" data-target="#view")
+                    i.material-icons visibility
+                td
+                  a(href="#" data-toggle="modal" data-target="#editAdmin")
+                    i.material-icons create
+              tr.table_inner
+                th(scope="row") #5
+                td Annika Mcbride
+                td.table_mail Annika.Mcbride@mail.com
+                td Yes
+                td
+                  a(href="#" data-toggle="modal" data-target="#view")
+                    i.material-icons visibility
+                td
+                  a(href="#" data-toggle="modal" data-target="#editAdmin")
+                    i.material-icons create
+              tr.table_inner
+                th(scope="row") #6
+                td Fatimah Clark
+                td.table_mail Fatimah.Clark@mail.com
+                td Yes
+                td
+                  a(href="#" data-toggle="modal" data-target="#view")
+                    i.material-icons visibility
+                td
+                  a(href="#" data-toggle="modal" data-target="#editAdmin")
+                    i.material-icons create
+              tr.table_inner
+                th(scope="row") #7
+                td Klaudia Rhodes
+                td.table_mail Klaudia.Rhodes@mail.com
+                td Yes
+                td
+                  a(href="#" data-toggle="modal" data-target="#view")
+                    i.material-icons visibility
+                td
+                  a(href="#" data-toggle="modal" data-target="#editAdmin")
+                    i.material-icons create
+              tr.table_inner
+                th(scope="row") #8
+                td Tillie Lucero
+                td.table_mail Tillie.Lucero@mail.com
+                td Yes
+                td
+                  a(href="#" data-toggle="modal" data-target="#view")
+                    i.material-icons visibility
+                td
+                  a(href="#" data-toggle="modal" data-target="#editAdmin")
+                    i.material-icons create
+              tr.table_inner
+                th(scope="row") #9
+                td Sabrina Stephenson
+                td.table_mail Sabrina.Stephenson@mail.com
+                td Yes
+                td
+                  a(href="#" data-toggle="modal" data-target="#view")
+                    i.material-icons visibility
+                td
+                  a(href="#" data-toggle="modal" data-target="#editAdmin")
+                    i.material-icons create
+              tr.table_inner
+                th(scope="row") #10
+                td Annie Smith
+                td.table_mail Annie.Smith@mail.com
+                td Yes
+                td
+                  a(href="#" data-toggle="modal" data-target="#view")
+                    i.material-icons visibility
+                td
+                  a(href="#" data-toggle="modal" data-target="#editAdmin")
+                    i.material-icons create
+
+      .main__footer
+        nav(aria-label="Page navigation example")
+          ul.pagination.justify-content-end
+            li.page-item
+              a.page-link.d-flex.justify-content-center(href="#")
+                i.material-icons keyboard_arrow_left
+            li.page-item.pagination--active
+              a.page-link.d-flex.justify-content-center(href="#") 1
+            li.page-item
+              a.page-link.d-flex.justify-content-center(href="#") 2
+            li.page-item
+              a.page-link.d-flex.justify-content-center(href="#") 3
+            li.page-item
+              a.page-link.d-flex.justify-content-center(href="#")
+                i.material-icons keyboard_arrow_right

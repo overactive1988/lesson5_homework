@@ -43,7 +43,7 @@ gulp.task("server", function() {
     server: {
       baseDir: filePath.base
     },
-    startPath: "/",
+    startPath: "/admin.html",
     ghostMode: false
   });
 });

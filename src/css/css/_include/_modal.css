@@ -1,2 +1,143 @@
-a {
+.modal-header {
+  padding: 3.2rem;
+  border-bottom: none;
+}
+.modal-title {
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+.close {
+  font-size: 2.4rem;
+}
+.modal-body {
+  padding: 0 3.2rem;
+}
+.modal--admin {
+  & h2 {
+    margin-bottom: 1.6rem;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  & label {
+    display: block;
+    font-size: 1.4rem;
+  }
+  & input[type="checkbox"] {
+    width: auto;
+    margin-top: 0.5rem;
+  }
+}
+.form--notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.8rem;
+  font-size: 1.6rem;
+  & p {
+    padding-left: 0.9rem;
+  }
+}
+.verify--status {
+  display: flex;
+}
+.verify--date {
+  font-size: 1.4rem;
+}
+.admin--group {
+  padding: 2.45rem 0;
+  border-bottom: 1px solid #cdddcd;
+  & button {
+    width: 100%;
+    padding: 1.6rem 0;
+    font-size: 1.6rem;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.modal-footer {
+  padding: 0 3.2rem 3.2rem;
+  border-top: none;
+  & button {
+    padding: 0.8rem 3.2rem;
+    font-size: 1.6rem;
+  }
+  & > :not(:last-child) {
+    margin-right: 1.6rem;
+  }
+}
+.form-control {
+  width: 100%;
+  height: auto;
+  padding: 1.6rem;
+  color: #000;
+  font-size: 1.6rem;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #edf4ee;
+  }
+  &.value--bg {
+    background-color: #edf4ee;
+    border: none;
+  }
+}
+.form-check label {
+  padding-left: 0.8rem;
+  font-size: 1.6rem;
+}
+.btn-outline-warning {
+  color: #e3006e;
+  border-color: #e3006e;
+  &:hover {
+    color: #fff;
+    background-color: #e3006e;
+    border-color: #e3006e;
+  }
+}
+.btn-success {
+  background-color: #2a8356;
+  border-color: #2a8356;
+  &:hover {
+    background-color: #10492d;
+    border-color: #10492d;
+  }
+}
+.btn-outline-success {
+  color: #2a8356;
+  border-color: #2a8356;
+  &:hover {
+    color: #fff;
+    background-color: #2a8356;
+    border-color: #2a8356;
+  }
+  &:disabled {
+    color: #cdddcd;
+    border-color: #cdddcd;
+    cursor: not-allowed;
+    &:hover {
+      color: #cdddcd;
+      background-color: transparent;
+      border-color: #cdddcd;
+    }
+  }
+}
+.arrow-btn {
+  position: relative;
+  &::after {
+    position: absolute;
+    right: -22px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #2a8356;
+    border-right: 2px solid #2a8356;
+    transform: translateY(50%) rotate(135deg);
+    transition: all 0.3s;
+    content: "";
+  }
+  &._this-open {
+    &::after {
+      transform: translateY(50%) rotate(315deg);
+    }
+  }
 }
