@@ -1,6 +1,5 @@
 .table {
-  margin-bottom: 6.3rem;
-  font-size: 1.6rem;
+  margin-bottom: 63px;
   & td,
   & th {
     border-top: none;
@@ -19,7 +18,7 @@
       background: #edf4ee;
     }
     & td:nth-child(n + 5) {
-      padding: 0.75rem 0;
+      padding: 8px 0;
     }
   }
 }
@@ -27,31 +26,25 @@
   text-transform: lowercase;
 }
 .table_head i {
-  margin-left: 0.4rem;
+  margin-left: 4px;
   color: #2a8356;
-  font-size: 1.8rem;
+  font-size: 18px;
   vertical-align: sub;
 }
 
 .pagination {
-  & .page-item {
-    font-size: 1.6rem;
-  }
   & .page-link {
     max-width: 32px;
     max-height: 32px;
-    padding: 0.6rem 1.15rem;
+    padding: 6px 12px;
     color: #2a8356;
+    line-height: 20px;
     background-color: transparent;
     border: 1px solid #2a8356;
     transition: all 0.3s;
     &:hover {
       color: #fff;
       background-color: #2a8356;
-    }
-    & i {
-      font-size: 1.6rem;
-      line-height: 1.25;
     }
   }
 }

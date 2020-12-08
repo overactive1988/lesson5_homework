@@ -12,159 +12,130 @@ block var
 
 block append css
 block content
-  main.main
-    .main__container
-      .main__header
-        .main__title
-          h1 Assignment
-          button.btn.mr-auto.main__option(type="button" data-toggle="modal" data-atget="#newAdmin")
-            span All Courses
-            i.material-icons keyboard_arrow_down
-        ul.main__others.list-unstyled
-          li
-            a(href="#")
-              i.material-icons search
-          li
-            a(href="#")
-              i.material-icons notifications_active
+  main.w-100
+    .main
+      .container-fluid
+        .main__header
+          .main__title
+            h1 Assignment
+            button.btn.mr-auto.main__option(type="button" data-toggle="modal" data-atget="#newAdmin")
+              span All Courses
+              i.material-icons keyboard_arrow_down
+          ul.main__others.list-unstyled
+            li
+              a(href="#")
+                i.material-icons search
+            li
+              a(href="#")
+                i.material-icons notifications_active
 
-      .main__body
-        .table-responsive
-          table.table
-            thead
-              tr.table_head
-                th(scope="col") ID
-                  a(href="#")
-                    i.material-icons arrow_downward
-                th(scope="col") Name
-                th(scope="col") Email
-                th(scope="col") Verified
-                th(scope="col")
-                th(scope="col")
-            tbody
-              tr.table_inner
-                th(scope="row") #1
-                td Emir Wicks
-                td.table_mail emir.wicks@mail.com
-                td Yes
-                td
-                  a(href="#")
-                    i.material-icons visibility
-                td
-                  a(href="#")
-                    i.material-icons create
-              tr.table_inner
-                th(scope="row") #2
-                td Zaina Goldsmith
-                td.table_mail zaina.goldsmith@mail.com
-                td Yes
-                td
-                  a(href="#")
-                    i.material-icons visibility
-                td
-                  a(href="#")
-                    i.material-icons create
-              tr.table_inner
-                th(scope="row") #3
-                td Mahima Lopez
-                td.table_mail Mahima.Lopez@mail.com
-                td Yes
-                td
-                  a(href="#")
-                    i.material-icons visibility
-                td
-                  a(href="#")
-                    i.material-icons create
-              tr.table_inner
-                th(scope="row") #4
-                td Pharrell Murray
-                td.table_mail Pharrell.Murray@mail.com
-                td Yes
-                td
-                  a(href="#")
-                    i.material-icons visibility
-                td
-                  a(href="#")
-                    i.material-icons create
-              tr.table_inner
-                th(scope="row") #5
-                td Annika Mcbride
-                td.table_mail Annika.Mcbride@mail.com
-                td Yes
-                td
-                  a(href="#")
-                    i.material-icons visibility
-                td
-                  a(href="#")
-                    i.material-icons create
-              tr.table_inner
-                th(scope="row") #6
-                td Fatimah Clark
-                td.table_mail Fatimah.Clark@mail.com
-                td Yes
-                td
-                  a(href="#")
-                    i.material-icons visibility
-                td
-                  a(href="#")
-                    i.material-icons create
-              tr.table_inner
-                th(scope="row") #7
-                td Klaudia Rhodes
-                td.table_mail Klaudia.Rhodes@mail.com
-                td Yes
-                td
-                  a(href="#")
-                    i.material-icons visibility
-                td
-                  a(href="#")
-                    i.material-icons create
-              tr.table_inner
-                th(scope="row") #8
-                td Tillie Lucero
-                td.table_mail Tillie.Lucero@mail.com
-                td Yes
-                td
-                  a(href="#")
-                    i.material-icons visibility
-                td
-                  a(href="#")
-                    i.material-icons create
-              tr.table_inner
-                th(scope="row") #9
-                td Sabrina Stephenson
-                td.table_mail Sabrina.Stephenson@mail.com
-                td Yes
-                td
-                  a(href="#")
-                    i.material-icons visibility
-                td
-                  a(href="#")
-                    i.material-icons create
-              tr.table_inner
-                th(scope="row") #10
-                td Annie Smith
-                td.table_mail Annie.Smith@mail.com
-                td Yes
-                td
-                  a(href="#")
-                    i.material-icons visibility
-                td
-                  a(href="#")
-                    i.material-icons create
+      .container-fluid
+        .row
+          .col-12
+            .d-flex.justify-content-between.align-items-center.pb-xs
+              p.d-flex ALL(4)
+                a(href="#").pl-2.material-icons.clr--primary keyboard_arrow_down
+              span.text-xs.clr--light 2 comments
+        .row
+          .col-4.assignmentAll
+            ul.list-unstyled.pl0.border.border-primary.border-top-0
+              li.border-top-primary.selected
+                a(href="#").p-xs.d-block
+                  p.pb-1.text-xs.d-flex.justify-content-between Chapter Assignment 2
+                    span.text-nowrap.text-xs 4 hrs ago
+                  h2.font-weight-bold.text-base.d-flex.justify-content-between.align-items-center Please check this file…
+                    span.text-nowrap.text-xs.clr--light Emily Wang
+              li.border-top-primary
+                a(href="#").p-xs.d-block
+                  p.pb-1.text-xs.d-flex.justify-content-between Chapter Assignment 1
+                    span.text-nowrap.text-xs 12 hrs ago
+                  h2.font-weight-bold.text-base.d-flex.justify-content-between.align-items-center My Homework
+                    span.text-nowrap.text-xs.clr--light David Xu
+              li.border-top-primary
+                a(href="#").p-xs.d-block
+                  p.pb-1.text-xs.d-flex.justify-content-between Final Assignment
+                    span.text-nowrap.text-xs 18 hrs ago
+                  h2.font-weight-bold.text-base.d-flex.justify-content-between.align-items-center Have a problem with this…
+                    span.text-nowrap.text-xs.clr--light Tony Wei
+              li.border-top-primary
+                a(href="#").p-xs.d-block
+                  p.pb-1.text-xs.d-flex.justify-content-between Final Assignment
+                    span.text-nowrap.text-xs 19 hrs ago
+                  h2.font-weight-bold.text-base.d-flex.justify-content-between.align-items-center Did I do it right?
+                    span.text-nowrap.text-xs.clr--light Christina Lin
+          .col-8
+            .border.border-primary.position-relative
+              .border-bottom-primary.d-flex.justify-content-between.py-xs.px-base.align-items-center.selected
+                .d-flex.flex-column
+                  p.pb-1.text-xs Chapter Assignment 2 / HTML&CSS
+                  h2.font-weight-bold.text-base Please check this file for me, thanks!
+                .btn-group.dropleft
+                  button.btn(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                    i.d-flex.material-icons more_vert
+                  .dropdown-menu(aria-labelledby="dropdownMenuButton")
+                    a.dropdown-item(href="#") EDIT
+                    a.dropdown-item(href="#") DELETE
+              .assignmentInfo__inner.py-base
+                .d-flex.pl-3.pr-32
+                  .photo.pic-1.rounded-circle
+                  .pl-2.pb-3.border-bottom-primary
+                    p.text-base.font-weight-bold Emily Wang
+                    span.text-xs.clr--light 10:38 AM (4 hours ago)
+                    p.text-sm.py-3 Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the #[mark div] is bigger than the height of the #[mark img] ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?
+                    a(href="#" style="height:40px").bg-primary.d-inline-flex.align-items-center.border.border-primary.py-xs.px-base
+                      i.material-icons attach_file
+                      span.pl-2.font-weight-bold HW-2-David.zip
+                .d-flex.pl-3.pr-32.pt-3
+                  .photo.pic-2.rounded-circle
+                  .pl-2
+                    .d-flex.justify-content-between.align-items-center
+                      p.text-base.font-weight-bold Andy Chen (You)
+                      span.d-flex
+                        a.material-icons.mr-4(href="#") star_border
+                        a.material-icons(href="#") edit
+                    span.text-xs.clr--light 13:24 AM (1 hours ago)
+                    p.text-sm.py-3 Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. 　
+                    p You can:
+                    ul.pt-4.pl-2
+                      li.customList adjust the #[mark vertical-align] of the image to position it elsewhere (e.g. the #[mark middle] ) or
+                      li.customList change the #[mark display] so it isn’t inline.
+            .pt-3.d-flex.justify-content-between.align-items-center
+              .d-flex
+                a.material-icons.mr-4(href="#") chevron_left
+                a.material-icons(href="#") chevron_right
+              .d-flex
+                button.font-weight-bold.px-5.btn.btn-outline-primary(type="button") Mark as read
+                button.font-weight-bold.ml-3.px-5.btn.btn-primary.collapsed(type="button" data-toggle="collapse" data-target="#replyEditor" aria-expanded="false" aria-controls="replyEditor") Reply
+            #replyEditor.replyEditor.border.border-primary.collapse
+              .border-bottom-primary.d-flex.justify-content-between.py-xs.px-base.align-items-center.bg-primary
+                .d-flex
+                  .btn-group.dropbottom.mr-4
+                    button.font-weight-bold.btn.dropdown-toggle(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Body Text
+                    .dropdown-menu(aria-labelledby="dropdownMenuButton")
+                      a.h1.dropdown-item(href="#") Heading 1
+                      a.h2.dropdown-item(href="#") Heading 2
+                      a.h3.dropdown-item(href="#") Heading 3
+                      a.h4.dropdown-item(href="#") Heading 4
+                      a.h5.dropdown-item(href="#") Heading 5
+                      a.h6.dropdown-item(href="#") Heading 6
+                      a.text-base.dropdown-item(href="#") Body Text
+                  ul.d-flex.align-items-center.list-unstyled
+                    li.mr-4.d-flex
+                      a.material-icons(href="#") format_bold
+                    li.mr-4.d-flex
+                      a.material-icons(href="#") format_italic
+                    li.mr-4.d-flex
+                      a.material-icons(href="#") format_list_bulleted
+                    li.mr-4.d-flex
+                      a.material-icons(href="#") format_list_numbered
+                    li.mr-4.d-flex
+                      a.material-icons(href="#") insert_photo
+                    li.mr-4.d-flex
+                      a.material-icons(href="#") insert_link
+                    li.mr-4.d-flex
+                      a.material-icons(href="#") code
+              textarea.w-100.px-4.py-4.border-0.clr-light#replyMessage(cols="30" rows="5" name="replyMessage" placeholder="Reply an answer…")
+              .d-flex.justify-content-end.mr-4.mb-4
+                button.font-weight-bold.px-5.btn.btn-outline-primary(type="button" data-toggle="collapse" data-target="#replyEditor" aria-expanded="true" aria-controls="replyEditor") Cancel
+                button.font-weight-bold.ml-3.px-5.btn.btn-primary Reply
 
-      .main__footer
-        nav(aria-label="Page navigation example")
-          ul.pagination.justify-content-end
-            li.page-item
-              a.page-link.d-flex.justify-content-center(href="#")
-                i.material-icons keyboard_arrow_left
-            li.page-item.pagination--active
-              a.page-link.d-flex.justify-content-center(href="#") 1
-            li.page-item
-              a.page-link.d-flex.justify-content-center(href="#") 2
-            li.page-item
-              a.page-link.d-flex.justify-content-center(href="#") 3
-            li.page-item
-              a.page-link.d-flex.justify-content-center(href="#")
-                i.material-icons keyboard_arrow_right

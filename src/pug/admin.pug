@@ -12,21 +12,20 @@ block var
 
 block append css
 block content
-  main.main
-    .main__container
-      .main__header
-        .main__title
-          h1 Admin
-          button.btn.mr-auto.main__option(type="button" data-toggle="modal" data-target="#newAdmin")
-            i.material-icons add
-            span Add New Admin
-        ul.main__others.list-unstyled
-          li
-            a(href="#")
-              i.material-icons search
-          li
-            a(href="#")
-              i.material-icons notifications_active
+  main.w-100
+    .main
+      .container-fluid
+        .main__header
+          .main__title
+            h1 Admin
+            button.btn.mr-auto.main__option(type="button" data-toggle="modal" data-target="#newAdmin")
+              i.material-icons add
+              span Add New Admin
+          ul.main__others.list-unstyled
+            li
+              a.material-icons(href="#") search
+            li
+              a.material-icons(href="#") notifications_active
 
         .
           <!-- Modal -->
@@ -63,7 +62,7 @@ block content
                         </div>
                       </div>
                       <div class="form-group">
-                        <button type="submit" class="btn btn-outline-success">Send Verification Mail</button>
+                        <button type="submit" class="btn btn-outline-primary">Send Verification Mail</button>
                       </div>
                     </div>
                     <div class="admin--group">
@@ -100,8 +99,8 @@ block content
                 </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-success " data-dismiss="modal">Cancel</button>
-                  <button type="button" class="btn btn-success">Add</button>
+                  <button type="button" class="btn btn-outline-primary " data-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary">Add</button>
                 </div>
               </div>
             </div>
@@ -134,13 +133,13 @@ block content
                       <h2>Verification</h2>
                       <div class="form--notice">
                         <div class="verify--status">
-                          <span class="material-icons clr--success">check_circle</span>
+                          <span class="material-icons clr--primary">check_circle</span>
                           <p class="font-weight-bold">Verified</p>
                         </div>
                         <div class="verify--date">2020/4/12</div>
                       </div>
                       <div class="form-group">
-                        <button type="submit" class="btn btn-outline-success" disabled>Send Verification Mail</button>
+                        <button type="submit" class="btn btn-outline-primary" disabled>Send Verification Mail</button>
                       </div>
                     </div>
                     <div class="admin--group">
@@ -189,8 +188,8 @@ block content
                 </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-success " data-dismiss="modal">Cancel</button>
-                  <button type="button" class="btn btn-success">Add</button>
+                  <button type="button" class="btn btn-outline-primary " data-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary">Add</button>
                 </div>
               </div>
             </div>
@@ -208,9 +207,9 @@ block content
                       <h2 class="modal-title">Emir Wicks</h2>
                       <span>emir.wicks@mail.com</span>
                       <div class="view-btn">
-                        <span class="text-capitalize">verified</span>
+                        <span class="bg-primary text-capitalize">verified</span>
                         <a href="#">
-                          <i class="arrow-btn clr--success"></i>
+                          <i class="arrow-btn clr--primary"></i>
                         </a>
                       </div>
                     </div>
@@ -221,13 +220,13 @@ block content
                 </div>
                 <div class="modal-footer" style="display: none">
                   <button type="button" class="btn btn-outline-warning font-weight-bold">Deactivate</button>
-                  <button type="button" class="btn btn-success font-weight-bold text-capitalize">edit</button>
+                  <button type="button" class="btn btn-primary font-weight-bold text-capitalize">edit</button>
                 </div>
               </div>
             </div>
           </div>
 
-      .main__body
+      .container-fluid
         .table-responsive
           table.table
             thead
@@ -247,117 +246,96 @@ block content
                 td.table_mail emir.wicks@mail.com
                 td Yes
                 td
-                  a(href="#" data-toggle="modal" data-target="#view")
-                    i.material-icons visibility
+                  a.material-icons(href="#" data-toggle="modal" data-target="#view") visibility
                 td
-                  a(href="#" data-toggle="modal" data-target="#editAdmin")
-                    i.material-icons create
+                  a.material-icons(href="#" data-toggle="modal" data-target="#editAdmin") create
               tr.table_inner
                 th(scope="row") #2
                 td Zaina Goldsmith
                 td.table_mail zaina.goldsmith@mail.com
                 td Yes
                 td
-                  a(href="#" data-toggle="modal" data-target="#view")
-                    i.material-icons visibility
+                  a.material-icons(href="#" data-toggle="modal" data-target="#view") visibility
                 td
-                  a(href="#" data-toggle="modal" data-target="#editAdmin")
-                    i.material-icons create
+                  a.material-icons(href="#" data-toggle="modal" data-target="#editAdmin") create
               tr.table_inner
                 th(scope="row") #3
                 td Mahima Lopez
                 td.table_mail Mahima.Lopez@mail.com
                 td Yes
                 td
-                  a(href="#" data-toggle="modal" data-target="#view")
-                    i.material-icons visibility
+                  a.material-icons(href="#" data-toggle="modal" data-target="#view") visibility
                 td
-                  a(href="#" data-toggle="modal" data-target="#editAdmin")
-                    i.material-icons create
+                  a.material-icons(href="#" data-toggle="modal" data-target="#editAdmin") create
               tr.table_inner
                 th(scope="row") #4
                 td Pharrell Murray
                 td.table_mail Pharrell.Murray@mail.com
                 td Yes
                 td
-                  a(href="#" data-toggle="modal" data-target="#view")
-                    i.material-icons visibility
+                  a.material-icons(href="#" data-toggle="modal" data-target="#view") visibility
                 td
-                  a(href="#" data-toggle="modal" data-target="#editAdmin")
-                    i.material-icons create
+                  a.material-icons(href="#" data-toggle="modal" data-target="#editAdmin") create
               tr.table_inner
                 th(scope="row") #5
                 td Annika Mcbride
                 td.table_mail Annika.Mcbride@mail.com
                 td Yes
                 td
-                  a(href="#" data-toggle="modal" data-target="#view")
-                    i.material-icons visibility
+                  a.material-icons(href="#" data-toggle="modal" data-target="#view") visibility
                 td
-                  a(href="#" data-toggle="modal" data-target="#editAdmin")
-                    i.material-icons create
+                  a.material-icons(href="#" data-toggle="modal" data-target="#editAdmin") create
               tr.table_inner
                 th(scope="row") #6
                 td Fatimah Clark
                 td.table_mail Fatimah.Clark@mail.com
                 td Yes
                 td
-                  a(href="#" data-toggle="modal" data-target="#view")
-                    i.material-icons visibility
+                  a.material-icons(href="#" data-toggle="modal" data-target="#view") visibility
                 td
-                  a(href="#" data-toggle="modal" data-target="#editAdmin")
-                    i.material-icons create
+                  a.material-icons(href="#" data-toggle="modal" data-target="#editAdmin") create
               tr.table_inner
                 th(scope="row") #7
                 td Klaudia Rhodes
                 td.table_mail Klaudia.Rhodes@mail.com
                 td Yes
                 td
-                  a(href="#" data-toggle="modal" data-target="#view")
-                    i.material-icons visibility
+                  a.material-icons(href="#" data-toggle="modal" data-target="#view") visibility
                 td
-                  a(href="#" data-toggle="modal" data-target="#editAdmin")
-                    i.material-icons create
+                  a.material-icons(href="#" data-toggle="modal" data-target="#editAdmin") create
               tr.table_inner
                 th(scope="row") #8
                 td Tillie Lucero
                 td.table_mail Tillie.Lucero@mail.com
                 td Yes
                 td
-                  a(href="#" data-toggle="modal" data-target="#view")
-                    i.material-icons visibility
+                  a.material-icons(href="#" data-toggle="modal" data-target="#view") visibility
                 td
-                  a(href="#" data-toggle="modal" data-target="#editAdmin")
-                    i.material-icons create
+                  a.material-icons(href="#" data-toggle="modal" data-target="#editAdmin") create
               tr.table_inner
                 th(scope="row") #9
                 td Sabrina Stephenson
                 td.table_mail Sabrina.Stephenson@mail.com
                 td Yes
                 td
-                  a(href="#" data-toggle="modal" data-target="#view")
-                    i.material-icons visibility
+                  a.material-icons(href="#" data-toggle="modal" data-target="#view") visibility
                 td
-                  a(href="#" data-toggle="modal" data-target="#editAdmin")
-                    i.material-icons create
+                  a.material-icons(href="#" data-toggle="modal" data-target="#editAdmin") create
               tr.table_inner
                 th(scope="row") #10
                 td Annie Smith
                 td.table_mail Annie.Smith@mail.com
                 td Yes
                 td
-                  a(href="#" data-toggle="modal" data-target="#view")
-                    i.material-icons visibility
+                  a.material-icons(href="#" data-toggle="modal" data-target="#view") visibility
                 td
-                  a(href="#" data-toggle="modal" data-target="#editAdmin")
-                    i.material-icons create
+                  a.material-icons(href="#" data-toggle="modal" data-target="#editAdmin") create
 
-      .main__footer
+      .container-fluid
         nav(aria-label="Page navigation example")
           ul.pagination.justify-content-end
             li.page-item
-              a.page-link.d-flex.justify-content-center(href="#")
-                i.material-icons keyboard_arrow_left
+              a.material-icons.page-link.d-flex.justify-content-center(href="#") keyboard_arrow_left
             li.page-item.pagination--active
               a.page-link.d-flex.justify-content-center(href="#") 1
             li.page-item
@@ -365,5 +343,4 @@ block content
             li.page-item
               a.page-link.d-flex.justify-content-center(href="#") 3
             li.page-item
-              a.page-link.d-flex.justify-content-center(href="#")
-                i.material-icons keyboard_arrow_right
+              a.material-icons.page-link.d-flex.justify-content-center(href="#") keyboard_arrow_right

@@ -22,18 +22,20 @@
     <link rel="stylesheet" href="/assets/css/common.min.css">
   </head>
   <body>
-    <div class="container-fluid">
-      <main class="main">
-        <div class="main__container">
-          <div class="main__header">
-            <div class="main__title">
-              <h1>Admin</h1>
-              <button class="btn mr-auto main__option" type="button" data-toggle="modal" data-target="#newAdmin"><i class="material-icons">add</i><span>Add New Admin</span></button>
-            </div>
-            <ul class="main__others list-unstyled">
-              <li><a href="#"><i class="material-icons">search</i></a></li>
-              <li><a href="#"><i class="material-icons">notifications_active</i></a></li>
-            </ul><!-- Modal -->
+    <div class="d-flex flex-row-reverse">
+      <main class="w-100">
+        <div class="main">
+          <div class="container-fluid">
+            <div class="main__header">
+              <div class="main__title">
+                <h1>Admin</h1>
+                <button class="btn mr-auto main__option" type="button" data-toggle="modal" data-target="#newAdmin"><i class="material-icons">add</i><span>Add New Admin</span></button>
+              </div>
+              <ul class="main__others list-unstyled">
+                <li><a class="material-icons" href="#">search</a></li>
+                <li><a class="material-icons" href="#">notifications_active</a></li>
+              </ul>
+            </div><!-- Modal -->
             <!--new admin-->
             <div class="modal fade" id="newAdmin" tabindex="-1" role="dialog" aria-labelledby="newAdminLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
@@ -67,7 +69,7 @@
                           </div>
                         </div>
                         <div class="form-group">
-                          <button type="submit" class="btn btn-outline-success">Send Verification Mail</button>
+                          <button type="submit" class="btn btn-outline-primary">Send Verification Mail</button>
                         </div>
                       </div>
                       <div class="admin--group">
@@ -104,8 +106,8 @@
                   </div>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-success " data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-success">Add</button>
+                    <button type="button" class="btn btn-outline-primary " data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Add</button>
                   </div>
                 </div>
               </div>
@@ -138,13 +140,13 @@
                         <h2>Verification</h2>
                         <div class="form--notice">
                           <div class="verify--status">
-                            <span class="material-icons clr--success">check_circle</span>
+                            <span class="material-icons clr--primary">check_circle</span>
                             <p class="font-weight-bold">Verified</p>
                           </div>
                           <div class="verify--date">2020/4/12</div>
                         </div>
                         <div class="form-group">
-                          <button type="submit" class="btn btn-outline-success" disabled>Send Verification Mail</button>
+                          <button type="submit" class="btn btn-outline-primary" disabled>Send Verification Mail</button>
                         </div>
                       </div>
                       <div class="admin--group">
@@ -193,8 +195,8 @@
                   </div>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-success " data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-success">Add</button>
+                    <button type="button" class="btn btn-outline-primary " data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Add</button>
                   </div>
                 </div>
               </div>
@@ -212,9 +214,9 @@
                         <h2 class="modal-title">Emir Wicks</h2>
                         <span>emir.wicks@mail.com</span>
                         <div class="view-btn">
-                          <span class="text-capitalize">verified</span>
+                          <span class="bg-primary text-capitalize">verified</span>
                           <a href="#">
-                            <i class="arrow-btn clr--success"></i>
+                            <i class="arrow-btn clr--primary"></i>
                           </a>
                         </div>
                       </div>
@@ -225,14 +227,14 @@
                   </div>
                   <div class="modal-footer" style="display: none">
                     <button type="button" class="btn btn-outline-warning font-weight-bold">Deactivate</button>
-                    <button type="button" class="btn btn-success font-weight-bold text-capitalize">edit</button>
+                    <button type="button" class="btn btn-primary font-weight-bold text-capitalize">edit</button>
                   </div>
                 </div>
               </div>
             </div>
             
           </div>
-          <div class="main__body">
+          <div class="container-fluid">
             <div class="table-responsive">
               <table class="table">
                 <thead>
@@ -251,99 +253,99 @@
                     <td>Emir Wicks</td>
                     <td class="table_mail">emir.wicks@mail.com</td>
                     <td>Yes</td>
-                    <td><a href="#" data-toggle="modal" data-target="#view"><i class="material-icons">visibility</i></a></td>
-                    <td><a href="#" data-toggle="modal" data-target="#editAdmin"><i class="material-icons">create</i></a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#view">visibility</a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#editAdmin">create</a></td>
                   </tr>
                   <tr class="table_inner">
                     <th scope="row">#2</th>
                     <td>Zaina Goldsmith</td>
                     <td class="table_mail">zaina.goldsmith@mail.com</td>
                     <td>Yes</td>
-                    <td><a href="#" data-toggle="modal" data-target="#view"><i class="material-icons">visibility</i></a></td>
-                    <td><a href="#" data-toggle="modal" data-target="#editAdmin"><i class="material-icons">create</i></a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#view">visibility</a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#editAdmin">create</a></td>
                   </tr>
                   <tr class="table_inner">
                     <th scope="row">#3</th>
                     <td>Mahima Lopez</td>
                     <td class="table_mail">Mahima.Lopez@mail.com</td>
                     <td>Yes</td>
-                    <td><a href="#" data-toggle="modal" data-target="#view"><i class="material-icons">visibility</i></a></td>
-                    <td><a href="#" data-toggle="modal" data-target="#editAdmin"><i class="material-icons">create</i></a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#view">visibility</a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#editAdmin">create</a></td>
                   </tr>
                   <tr class="table_inner">
                     <th scope="row">#4</th>
                     <td>Pharrell Murray</td>
                     <td class="table_mail">Pharrell.Murray@mail.com</td>
                     <td>Yes</td>
-                    <td><a href="#" data-toggle="modal" data-target="#view"><i class="material-icons">visibility</i></a></td>
-                    <td><a href="#" data-toggle="modal" data-target="#editAdmin"><i class="material-icons">create</i></a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#view">visibility</a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#editAdmin">create</a></td>
                   </tr>
                   <tr class="table_inner">
                     <th scope="row">#5</th>
                     <td>Annika Mcbride</td>
                     <td class="table_mail">Annika.Mcbride@mail.com</td>
                     <td>Yes</td>
-                    <td><a href="#" data-toggle="modal" data-target="#view"><i class="material-icons">visibility</i></a></td>
-                    <td><a href="#" data-toggle="modal" data-target="#editAdmin"><i class="material-icons">create</i></a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#view">visibility</a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#editAdmin">create</a></td>
                   </tr>
                   <tr class="table_inner">
                     <th scope="row">#6</th>
                     <td>Fatimah Clark</td>
                     <td class="table_mail">Fatimah.Clark@mail.com</td>
                     <td>Yes</td>
-                    <td><a href="#" data-toggle="modal" data-target="#view"><i class="material-icons">visibility</i></a></td>
-                    <td><a href="#" data-toggle="modal" data-target="#editAdmin"><i class="material-icons">create</i></a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#view">visibility</a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#editAdmin">create</a></td>
                   </tr>
                   <tr class="table_inner">
                     <th scope="row">#7</th>
                     <td>Klaudia Rhodes</td>
                     <td class="table_mail">Klaudia.Rhodes@mail.com</td>
                     <td>Yes</td>
-                    <td><a href="#" data-toggle="modal" data-target="#view"><i class="material-icons">visibility</i></a></td>
-                    <td><a href="#" data-toggle="modal" data-target="#editAdmin"><i class="material-icons">create</i></a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#view">visibility</a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#editAdmin">create</a></td>
                   </tr>
                   <tr class="table_inner">
                     <th scope="row">#8</th>
                     <td>Tillie Lucero</td>
                     <td class="table_mail">Tillie.Lucero@mail.com</td>
                     <td>Yes</td>
-                    <td><a href="#" data-toggle="modal" data-target="#view"><i class="material-icons">visibility</i></a></td>
-                    <td><a href="#" data-toggle="modal" data-target="#editAdmin"><i class="material-icons">create</i></a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#view">visibility</a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#editAdmin">create</a></td>
                   </tr>
                   <tr class="table_inner">
                     <th scope="row">#9</th>
                     <td>Sabrina Stephenson</td>
                     <td class="table_mail">Sabrina.Stephenson@mail.com</td>
                     <td>Yes</td>
-                    <td><a href="#" data-toggle="modal" data-target="#view"><i class="material-icons">visibility</i></a></td>
-                    <td><a href="#" data-toggle="modal" data-target="#editAdmin"><i class="material-icons">create</i></a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#view">visibility</a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#editAdmin">create</a></td>
                   </tr>
                   <tr class="table_inner">
                     <th scope="row">#10</th>
                     <td>Annie Smith</td>
                     <td class="table_mail">Annie.Smith@mail.com</td>
                     <td>Yes</td>
-                    <td><a href="#" data-toggle="modal" data-target="#view"><i class="material-icons">visibility</i></a></td>
-                    <td><a href="#" data-toggle="modal" data-target="#editAdmin"><i class="material-icons">create</i></a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#view">visibility</a></td>
+                    <td><a class="material-icons" href="#" data-toggle="modal" data-target="#editAdmin">create</a></td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
-          <div class="main__footer">
+          <div class="container-fluid">
             <nav aria-label="Page navigation example">
               <ul class="pagination justify-content-end">
-                <li class="page-item"><a class="page-link d-flex justify-content-center" href="#"><i class="material-icons">keyboard_arrow_left</i></a></li>
+                <li class="page-item"><a class="material-icons page-link d-flex justify-content-center" href="#">keyboard_arrow_left</a></li>
                 <li class="page-item pagination--active"><a class="page-link d-flex justify-content-center" href="#">1</a></li>
                 <li class="page-item"><a class="page-link d-flex justify-content-center" href="#">2</a></li>
                 <li class="page-item"><a class="page-link d-flex justify-content-center" href="#">3</a></li>
-                <li class="page-item"><a class="page-link d-flex justify-content-center" href="#"><i class="material-icons">keyboard_arrow_right</i></a></li>
+                <li class="page-item"><a class="material-icons page-link d-flex justify-content-center" href="#">keyboard_arrow_right</a></li>
               </ul>
             </nav>
           </div>
         </div>
       </main>
-      <aside class="aside">
+      <aside class="aside bg-primary">
         <nav class="aside__nav">
           <ul class="list-unstyled">
             <li class="pl-5 mb-0"><a href="#">
@@ -362,7 +364,8 @@
                 <p>Settings</p></a></li>
           </ul>
         </nav>
-        <div class="aside__footer pl-5"><img class="rounded-circle img-fluid" src="/assets/images/andychen.jpeg" alt="">
+        <div class="aside__footer pl-5">
+          <div class="photo pic-2 rounded-circle"></div>
           <div class="aside__description">
             <p>Andy Chen</p><a href="mailto:andy0401@mail.com">andy0401@mail.com</a>
           </div>

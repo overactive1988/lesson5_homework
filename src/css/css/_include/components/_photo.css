@@ -1,0 +1,13 @@
+.photo {
+  min-width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.pic-1 {
+  background-image: url(../images/emilywang.jpeg);
+}
+.pic-2 {
+  background-image: url(../images/andychen.jpeg);
+}

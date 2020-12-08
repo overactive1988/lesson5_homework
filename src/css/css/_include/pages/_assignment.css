@@ -1,0 +1,28 @@
+.assignmentAll {
+  & a:hover {
+    color: #000;
+    text-decoration: none;
+    background: rgba(205, 221, 205, 0.2);
+  }
+}
+.selected {
+  background: #edf4ee;
+}
+.customList {
+  position: relative;
+  list-style: none;
+  &::before {
+    position: relative;
+    padding-right: 5px;
+    padding-left: 20px;
+    content: "•";
+  }
+}
+.replyEditor {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  left: 0;
+  margin: 0 15px;
+  background: #fff;
+}

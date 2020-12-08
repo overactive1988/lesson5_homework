@@ -1,7 +1,17 @@
 @charset "utf-8";
-@import "_include/_layout.css";
-@import "_include/_assignment.css";
-@import "_include/_reply.css";
-@import "_include/_admin.css";
-@import "_include/_modal.css";
-@import "_include/_utility.css";
+
+@import "_include/base/_base.css";
+
+@import "_include/components/_reply.css";
+@import "_include/components/_modal.css";
+@import "_include/components/_photo.css";
+
+@import "_include/layout/_layout.css";
+@import "_include/layout/_aside.css";
+
+@import "_include/pages/_assignment.css";
+@import "_include/pages/_admin.css";
+
+@import "_include/utils/_utility.css";
+
+@import "_include/help/_custom.css";
